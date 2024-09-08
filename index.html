@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="DynamicResume">
+        <h1>Milestone 4: Editable Resume Builder By Shazia Binte Abdus Sattar</h1> 
+        <form id="resumeForm" aria-label="Resume Form">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend><u>Personal Information</u></legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-label="Name"><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required aria-label="Email">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required aria-label="Phone">
+            </fieldset> 
+
+            <!-- Education -->
+            <fieldset>
+                <legend><u>Education</u></legend>
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" rows="4" required aria-label="Education"></textarea> <br>
+            </fieldset> 
+
+            <!-- Experience -->
+            <fieldset>
+                <legend><u>Experience</u></legend>
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" rows="4" required aria-label="Experience"></textarea> <br>
+            </fieldset> 
+
+            <!-- Skills -->
+            <fieldset>
+                <legend><u>Skills</u></legend>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="4" required aria-label="Skills"></textarea> <br>
+            </fieldset> 
+
+            <button type="submit"><b>Generate Resume Below</b></button>
+        </form>
+    
+    <div id="resumeOutput">
+
+        <!-- Resume will be Generated Below -->
+    </div>
+</div>
+    <script src="script.js"></script> <!-- Changed to script.js as TypeScript should be compiled to JS -->
+</body>
+</html>
